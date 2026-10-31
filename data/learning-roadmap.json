@@ -1,0 +1,484 @@
+[
+    {
+        "number":  1,
+        "title":  "Python reset — CLI Expense Tracker",
+        "milestone":  false,
+        "prerequisite":  "none assumed; verify your current Python level.",
+        "topics":  [
+                       "Install/verify Python and run scripts from the terminal.",
+                       "Variables, assignment, basic data types, type conversion.",
+                       "Operators, expressions, comparisons, Boolean logic.",
+                       "Input/output, formatted strings, basic validation.",
+                       "Conditional statements and loops.",
+                       "Lists, dictionaries, tuples, sets, indexing and iteration.",
+                       "Functions, parameters, return values, scope.",
+                       "Exceptions and basic error handling.",
+                       "Read/write JSON; distinguish data from its file representation.",
+                       "Import modules, use the standard library, organize a small project.",
+                       "Git basics, repository initialization, commits, README, src/, tests/."
+                   ],
+        "practice":  "Build a calculator, a list-based expense total, a dictionary representing one expense, and a JSON save/load exercise.",
+        "acceptance":  "Add, delete, categorize, list, and total expenses through a CLI; preserve data after restarting; handle invalid input; commit the project to GitHub with a README and basic tests."
+    },
+    {
+        "number":  2,
+        "title":  "Professional Python — Expense Tracker v2",
+        "milestone":  false,
+        "prerequisite":  "Week 1 Python fundamentals and working CLI.",
+        "topics":  [
+                       "File and package organization; imports and module responsibilities.",
+                       "Iteration patterns, comprehensions, and appropriate data structures.",
+                       "Function decomposition and separation of concerns.",
+                       "datetime and date parsing/ranges.",
+                       "CSV reading/writing and export formats.",
+                       "Exceptions, validation, and meaningful error messages.",
+                       "Configuration, paths, and safe file handling.",
+                       "Unit tests, assertions, test cases, and edge cases.",
+                       "Debugging with tracebacks and a debugger.",
+                       "Virtual environments, pip, and dependency management.",
+                       "Basic type hints, docstrings, and readable naming."
+                   ],
+        "practice":  "Add CSV export, date filtering, category filtering, and tests for empty data, invalid dates, and missing files.",
+        "acceptance":  "Expense Tracker v2 supports filtering and export, passes automated tests, and has a reproducible setup documented in its README."
+    },
+    {
+        "number":  3,
+        "title":  "Git + HTTP + APIs — API Data Collector",
+        "milestone":  false,
+        "prerequisite":  "Python functions, JSON, exceptions, and modules.",
+        "topics":  [
+                       "Git staging, commit history, branches, merge conflicts, .gitignore.",
+                       "GitHub repositories, pushes, pull workflow, and commit hygiene.",
+                       "Client/server architecture, requests and responses.",
+                       "HTTP methods, status codes, headers, query parameters.",
+                       "REST API conventions and JSON payloads.",
+                       "Use an HTTP client library such as requests or httpx.",
+                       "Parse API responses and validate expected fields/types.",
+                       "Timeouts, network failures, rate limits, and safe retries.",
+                       "Environment variables and basic API-key handling.",
+                       "Idempotency basics and logging failed requests."
+                   ],
+        "practice":  "Call a public API, inspect the response, validate fields, transform the data, and save it as JSON.",
+        "acceptance":  "A repeatable API collector handles invalid responses and network errors, saves valid transformed data, and includes setup and usage documentation."
+    },
+    {
+        "number":  4,
+        "title":  "SQL + PostgreSQL — Database-backed application",
+        "milestone":  false,
+        "prerequisite":  "data structures, JSON, HTTP responses, and basic relational concepts.",
+        "topics":  [
+                       "Relational databases, tables, rows, columns, and schemas.",
+                       "Data types, primary keys, foreign keys, and constraints.",
+                       "SELECT, INSERT, UPDATE, and DELETE.",
+                       "WHERE, ORDER BY, LIMIT, aggregates, and GROUP BY.",
+                       "Joins and relationships between tables.",
+                       "Normalization fundamentals and schema design.",
+                       "PostgreSQL installation/setup and connecting from Python.",
+                       "Parameterized queries and SQL injection prevention.",
+                       "Transactions, commit/rollback, and basic integrity.",
+                       "Index fundamentals and database error handling."
+                   ],
+        "practice":  "Design a schema for customers, tickets, and ticket categories; query, insert, update, and delete records.",
+        "acceptance":  "Python fetches data from an API, validates it, and persists it in PostgreSQL using a sensible schema and parameterized SQL."
+    },
+    {
+        "number":  5,
+        "title":  "FastAPI — Customer Ticket API",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "API routing, path/query parameters, request bodies.",
+                       "Pydantic models, validation, serialization.",
+                       "CRUD endpoints and appropriate HTTP status codes.",
+                       "Dependency injection fundamentals.",
+                       "PostgreSQL integration and database session lifecycle.",
+                       "Configuration and environment variables.",
+                       "API documentation and interactive OpenAPI docs.",
+                       "Consistent error responses and endpoint testing."
+                   ],
+        "practice":  "Implement a single ticket endpoint first, then add the remaining CRUD operations.",
+        "acceptance":  "A functioning ticket API supports POST/GET/PATCH/DELETE, validates requests, stores data in PostgreSQL, and exposes usable API documentation."
+    },
+    {
+        "number":  6,
+        "title":  "Backend completion — Portfolio Project 1",
+        "milestone":  true,
+        "prerequisite":  "",
+        "topics":  [
+                       "HTTP and database integration tests.",
+                       "Test fixtures and isolated test data.",
+                       "Layered organization: routes, schemas, business logic, database access.",
+                       "Pagination, filtering, and sensible validation boundaries.",
+                       "Database migrations and schema change management.",
+                       "Logging, exception handling, and configuration.",
+                       "Git branches, clean commits, and issue-driven changes.",
+                       "Architecture diagrams, screenshots, README, limitations."
+                   ],
+        "practice":  "Write tests for nonexistent tickets, invalid payloads, duplicate or conflicting data, and database failures.",
+        "acceptance":  "A polished Support Ticket Backend repository with tests, architecture diagram, screenshots, setup instructions, and an explanation of the design."
+    },
+    {
+        "number":  7,
+        "title":  "LLM fundamentals — Python LLM CLI",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "What LLMs can and cannot reliably do.",
+                       "Model/API request-response flow.",
+                       "System and user instructions; prompt structure.",
+                       "Tokens, context windows, latency, and cost.",
+                       "Temperature and generation settings at a conceptual level.",
+                       "Nondeterminism and hallucinations.",
+                       "Structured task definition and output requirements.",
+                       "Basic output validation and failure handling.",
+                       "Privacy considerations when sending customer data to external models."
+                   ],
+        "practice":  "Classify a sample support complaint and request a category, priority, summary, and recommended action.",
+        "acceptance":  "A Python CLI takes a complaint and returns validated structured JSON, with sensible handling of malformed or incomplete outputs."
+    },
+    {
+        "number":  8,
+        "title":  "LLM APIs properly — Ticket Intelligence API",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "API client setup, authentication, and model selection.",
+                       "Structured outputs and schema validation.",
+                       "Async requests when useful; request timeouts.",
+                       "Rate limits, retries, error classes, and fallback behavior.",
+                       "Token usage, cost tracking, and latency measurement.",
+                       "Prompt versioning and repeatable test inputs.",
+                       "LLM integration inside FastAPI.",
+                       "Persisting model outputs and status in PostgreSQL.",
+                       "Separating deterministic business rules from model decisions."
+                   ],
+        "practice":  "Extend the ticket API to classify complaints, store the results, and expose an endpoint for classification.",
+        "acceptance":  "FastAPI → LLM → validated classification → PostgreSQL works end-to-end and can be tested without manually inspecting every response."
+    },
+    {
+        "number":  9,
+        "title":  "Embeddings + RAG concepts",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Embeddings and semantic similarity.",
+                       "Vector representations and distance/similarity measures.",
+                       "Retrieval-Augmented Generation: retrieve before generating.",
+                       "Document ingestion, text extraction, and metadata.",
+                       "Chunking, chunk size, and overlap.",
+                       "Similarity search and top-k retrieval.",
+                       "Grounded answers, source attribution, and abstention.",
+                       "Basic retrieval-versus-generation failure analysis."
+                   ],
+        "practice":  "Create a tiny document search over 10–20 documents and compare retrieved results with keyword search.",
+        "acceptance":  "A working document-search prototype can retrieve relevant passages and show where each passage came from."
+    },
+    {
+        "number":  10,
+        "title":  "PostgreSQL + vector search",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "pgvector fundamentals and vector column storage.",
+                       "Document/chunk/embedding data models.",
+                       "Embedding generation and storage.",
+                       "Similarity queries and top-k results.",
+                       "Metadata filtering and document identity.",
+                       "Re-ingestion, duplicate prevention, and update handling.",
+                       "Connecting retrieval to a Python service.",
+                       "Basic retrieval quality checks."
+                   ],
+        "practice":  "Ingest documents, chunk them, generate embeddings, store them in PostgreSQL/pgvector, and retrieve relevant chunks.",
+        "acceptance":  "The retrieval pipeline is repeatable, persists vectors, returns relevant passages with metadata, and avoids accidental duplicate ingestion."
+    },
+    {
+        "number":  11,
+        "title":  "RAG chatbot — Portfolio Project 2",
+        "milestone":  true,
+        "prerequisite":  "",
+        "topics":  [
+                       "Retrieval and generation pipeline design.",
+                       "Prompting with retrieved context.",
+                       "Citation IDs and mapping answers to source passages.",
+                       "Refusing or abstaining when evidence is insufficient.",
+                       "Handling irrelevant, conflicting, or incomplete context.",
+                       "API integration and persistent document storage.",
+                       "Separating ingestion, retrieval, and answer generation.",
+                       "Manual testing of grounded and ungrounded questions."
+                   ],
+        "practice":  "Test questions whose answers are present, absent, or ambiguous in the documents.",
+        "acceptance":  "A Company Knowledge Assistant provides source-backed answers and can decline to answer when the documents do not support a reliable response."
+    },
+    {
+        "number":  12,
+        "title":  "RAG quality — Evaluation dataset",
+        "milestone":  true,
+        "prerequisite":  "",
+        "topics":  [
+                       "Build a representative dataset of 50–100 test questions.",
+                       "Expected answers, evidence passages, and expected abstentions.",
+                       "Retrieval relevance and recall concepts.",
+                       "Answer correctness, faithfulness, and citation checks.",
+                       "Repeatable evaluation runs and recorded results.",
+                       "Failure categorization and error analysis.",
+                       "Compare changes against a baseline.",
+                       "Document limitations and known failure patterns."
+                   ],
+        "practice":  "Run the same questions against two retrieval or prompting configurations and record which errors change.",
+        "acceptance":  "A repeatable evaluation report includes test inputs, expected outcomes, actual results, failure categories, and limitations."
+    },
+    {
+        "number":  13,
+        "title":  "n8n — First business workflow",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Workflow triggers and node-based execution.",
+                       "Form submissions, webhooks, and payload structure.",
+                       "Expressions, mapping, and conditional branches.",
+                       "HTTP Request node and API authentication.",
+                       "Connecting an LLM to a workflow.",
+                       "PostgreSQL integration and notification delivery.",
+                       "Execution history, retries, and error workflows.",
+                       "Testing each node and the complete workflow."
+                   ],
+        "practice":  "Build form → n8n → LLM classification → PostgreSQL → notification.",
+        "acceptance":  "A submitted form reliably enters the workflow, is classified, stored, and routed to the appropriate notification destination."
+    },
+    {
+        "number":  14,
+        "title":  "Business workflow automation — Lead Qualification",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Map a real business process from trigger to outcome.",
+                       "Define qualification rules and required data.",
+                       "Combine deterministic rules with AI classification.",
+                       "Integrate CRM or a mock lead database.",
+                       "Handle incomplete inputs and duplicate submissions.",
+                       "Route leads by priority and qualification outcome.",
+                       "Capture logs, workflow status, and failures.",
+                       "Document the business problem and expected value."
+                   ],
+        "practice":  "Build an automated lead intake and qualification workflow.",
+        "acceptance":  "The workflow routes sample leads consistently, records decisions, handles failures, and can be demonstrated as an agency-style project."
+    },
+    {
+        "number":  15,
+        "title":  "Tool calling — AI Support Agent v1",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Tool/function schemas and argument validation.",
+                       "Model-selected actions versus application-executed actions.",
+                       "Tool dispatch, results, and follow-up model calls.",
+                       "Search-ticket and retrieve-knowledge tools.",
+                       "Business rules, permissions, and tool boundaries.",
+                       "Invalid arguments, tool errors, and execution limits.",
+                       "Conversation state and traceable action records.",
+                       "Testing correct, incorrect, and unnecessary tool calls."
+                   ],
+        "practice":  "Let the model choose between searching the knowledge base and retrieving a ticket, while Python validates and executes the selected tool.",
+        "acceptance":  "The agent can select supported tools, produce valid arguments, handle tool failures, and explain its actions through recorded results."
+    },
+    {
+        "number":  16,
+        "title":  "Human-in-the-loop — Controlled AI actions",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Confidence scores versus calibrated confidence.",
+                       "Decision thresholds and uncertainty.",
+                       "Escalation rules and fallback behavior.",
+                       "Human approval and rejection flows.",
+                       "Audit logs and decision traceability.",
+                       "Separation of proposed actions from executed actions.",
+                       "Permissions and safe handling of sensitive operations.",
+                       "Testing borderline cases and failure scenarios."
+                   ],
+        "practice":  "Require human approval before a high-impact support action; let low-risk, explicitly permitted actions follow a controlled path.",
+        "acceptance":  "The workflow knows when to escalate, prevents unauthorized actions, records approval decisions, and safely handles rejected or timed-out approvals."
+    },
+    {
+        "number":  17,
+        "title":  "LangGraph — Controlled support workflow",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Graphs, nodes, edges, and conditional transitions.",
+                       "State schemas and state updates.",
+                       "Explicit workflow stages: classify → retrieve → decide → evaluate.",
+                       "Tool integration within a graph.",
+                       "Checkpointing and interruption concepts.",
+                       "Human review and resuming workflows.",
+                       "Loop prevention and termination conditions.",
+                       "State-transition testing and trace inspection."
+                   ],
+        "practice":  "Rebuild a limited support workflow as an explicit graph instead of adding another agent framework.",
+        "acceptance":  "A traceable workflow follows defined transitions, handles failures and approvals, and has tests for expected paths."
+    },
+    {
+        "number":  18,
+        "title":  "Testing AI systems — Automated evaluation harness",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Unit, integration, and end-to-end testing.",
+                       "Deterministic mocks for external model APIs.",
+                       "Dataset-driven evaluation of 100 questions.",
+                       "Scoring functions and human-reviewed criteria.",
+                       "Regression testing across prompt/model changes.",
+                       "Tool-selection and argument-validity tests.",
+                       "Latency, cost, failure rate, and outcome tracking.",
+                       "Evaluation reports and reproducible runs."
+                   ],
+        "practice":  "Run the agent against a fixed dataset, score its results, and produce a report identifying regressions.",
+        "acceptance":  "An automated test suite executes 100 questions, records scores and failures, and produces a report that another person can reproduce."
+    },
+    {
+        "number":  19,
+        "title":  "Docker — Reproducible environments",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Containers versus virtual machines.",
+                       "Images, containers, Dockerfiles, and build contexts.",
+                       "Ports, volumes, networks, and persistent database storage.",
+                       "Environment configuration and secret handling.",
+                       "Docker Compose services and dependencies.",
+                       "Container logs, startup failures, and debugging.",
+                       "Database readiness and health checks.",
+                       "Reproducible local setup and clean shutdown."
+                   ],
+        "practice":  "Containerize FastAPI, PostgreSQL, and the AI service with Compose.",
+        "acceptance":  "A clean environment can start the services using documented commands, persist database data as intended, and expose diagnosable logs."
+    },
+    {
+        "number":  20,
+        "title":  "Production architecture — Deployable AI workflow",
+        "milestone":  true,
+        "prerequisite":  "",
+        "topics":  [
+                       "Structured logging and request/trace IDs.",
+                       "Secret management and environment-specific configuration.",
+                       "Timeouts, bounded retries, backoff, and idempotency.",
+                       "Background jobs and long-running operations.",
+                       "Database migrations and operational recovery.",
+                       "Basic security, access control, and input validation.",
+                       "Health checks, monitoring, and error reporting.",
+                       "Cloud deployment, deployment configuration, and rollback concepts.",
+                       "Deployment documentation and operational troubleshooting."
+                   ],
+        "practice":  "Deploy a controlled AI workflow and test what happens when the model API, database, or downstream service fails.",
+        "acceptance":  "Another developer can deploy the system from the documentation, configure secrets safely, run tests, and diagnose common failures."
+    },
+    {
+        "number":  21,
+        "title":  "Capstone architecture — AI Customer Operations Platform",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Define the business problem, users, and success metrics.",
+                       "Scope the minimum viable product and explicit exclusions.",
+                       "Draw system architecture and data flow.",
+                       "Design PostgreSQL schemas and vector storage.",
+                       "Define API contracts and service boundaries.",
+                       "Design document ingestion and RAG retrieval.",
+                       "Design tools, n8n integration, and approval paths.",
+                       "Define evaluation criteria and test data.",
+                       "Break the implementation into testable milestones."
+                   ],
+        "practice":  "Write a short technical specification before implementation.",
+        "acceptance":  "A scoped capstone specification connects each feature to a business need, test strategy, and measurable outcome."
+    },
+    {
+        "number":  22,
+        "title":  "Capstone reliability",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Input and output validation at system boundaries.",
+                       "Edge cases, empty data, and malformed inputs.",
+                       "Duplicate requests and idempotent operations.",
+                       "Retry limits, timeouts, and recovery paths.",
+                       "RAG grounding, citation correctness, and abstention.",
+                       "Tool permissions, approval checks, and auditability.",
+                       "Evaluation dataset of 100+ cases.",
+                       "Documented scores, failures, and corrective changes."
+                   ],
+        "practice":  "Build a failure-oriented test matrix covering API, retrieval, model, database, and workflow behavior.",
+        "acceptance":  "The platform has repeatable tests for reliability and AI quality, with 100+ evaluation cases and recorded results."
+    },
+    {
+        "number":  23,
+        "title":  "Capstone deployment",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Final Docker Compose configuration.",
+                       "Deployment environment variables and secrets.",
+                       "Database migrations and persistence checks.",
+                       "Production-oriented README and architecture diagram.",
+                       "API usage examples and setup instructions.",
+                       "Health checks, logs, and known limitations.",
+                       "Demo script and recorded demo video.",
+                       "Fresh-environment deployment test."
+                   ],
+        "practice":  "Have someone else follow your documentation or simulate a first-time user.",
+        "acceptance":  "The capstone is demonstrable, documented, deployable, and understandable without relying on undocumented steps."
+    },
+    {
+        "number":  24,
+        "title":  "Portfolio + CV",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Pin four repositories on GitHub.",
+                       "Polish the three main projects and AI Evaluation Harness.",
+                       "Use the Problem → Architecture → Implementation → Evaluation → Result → Limitations format.",
+                       "Write project descriptions based on evidence.",
+                       "Add diagrams, screenshots, setup instructions, and demos.",
+                       "Describe your technical contribution accurately.",
+                       "Rewrite CV bullets around demonstrated skills and outcomes.",
+                       "Prepare concise project explanations."
+                   ],
+        "practice":  "Explain each project in two minutes and then walk through its architecture.",
+        "acceptance":  "Your portfolio is coherent, reproducible, and supported by concrete evidence rather than unverified skill claims."
+    },
+    {
+        "number":  25,
+        "title":  "Applications + networking",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Analyze real job descriptions and required skills.",
+                       "Match roles to verified project evidence.",
+                       "Tailor CVs and applications.",
+                       "Track applications, follow-ups, and response rates.",
+                       "Contact startups, SaaS firms, agencies, and consultancies.",
+                       "Prepare outreach around a concrete business problem.",
+                       "Define a small, achievable freelance service.",
+                       "Practice explaining business value and technical trade-offs."
+                   ],
+        "practice":  "Submit targeted applications and send relevant, personalized outreach.",
+        "acceptance":  "An active application tracker, tailored materials, and a repeatable outreach process exist."
+    },
+    {
+        "number":  26,
+        "title":  "Interview + client readiness",
+        "milestone":  false,
+        "prerequisite":  "",
+        "topics":  [
+                       "Explain Python, HTTP, SQL, APIs, and backend architecture.",
+                       "Explain RAG, embeddings, evaluation, and model limitations.",
+                       "Explain tool calling, approval boundaries, and reliability.",
+                       "Debug a small unfamiliar problem under time constraints.",
+                       "Discuss architecture alternatives and trade-offs.",
+                       "Present project demos and evaluation evidence.",
+                       "Answer behavioral and business-impact questions.",
+                       "Continue applications and refine based on actual feedback."
+                   ],
+        "practice":  "Run mock interviews, code reviews, and a simulated client discovery call.",
+        "acceptance":  "You can independently demonstrate your projects, explain important decisions, discuss limitations honestly, and respond to technical and business questions."
+    }
+]

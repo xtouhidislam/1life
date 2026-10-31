@@ -1,0 +1,8 @@
+{
+  "checked_on": "2026-10-31",
+  "entries": 540,
+  "verbatim_arabic_matches": 540,
+  "quran_translation_matches": 180,
+  "individual_hadith_links_checked": 180,
+  "method": "Exact byte/string comparison with downloaded source snapshots; each individual Hadith URL also fetched and compared. This is data provenance validation, not independent scholarly authentication."
+}

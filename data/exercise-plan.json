@@ -1,0 +1,40 @@
+{
+  "source": "assets/exercise.docx",
+  "routines": [
+    {"day":0,"title":"Full rest","duration":"Recovery day","patterns":[]},
+    {"day":1,"title":"Push","duration":"About 40 minutes","patterns":["push","core"]},
+    {"day":2,"title":"Pull + core","duration":"About 40 minutes","patterns":["pull","core"]},
+    {"day":3,"title":"Rest or light mobility","duration":"15–20 minutes if doing mobility","patterns":[]},
+    {"day":4,"title":"Legs + glutes","duration":"About 40 minutes","patterns":["legs","core"]},
+    {"day":5,"title":"Full body · lighter","duration":"About 40 minutes","patterns":["push","pull","legs","core"]},
+    {"day":6,"title":"Long session + skill work","duration":"50–60 minutes","patterns":["push","pull","legs","core"]}
+  ],
+  "movements": [
+    {"id":"push-1","pattern":"push","level":1,"title":"Wall Push-up","graduate":"3×15 feels easy","minimum":15,"unit":"reps","sets":3,"visual":"wall","bar":false},
+    {"id":"push-2","pattern":"push","level":2,"title":"Incline Push-up","graduate":"3×12 clean reps","minimum":12,"unit":"reps","sets":3,"visual":"incline","bar":false},
+    {"id":"push-3","pattern":"push","level":3,"title":"Knee Push-up","graduate":"3×12 clean reps","minimum":12,"unit":"reps","sets":3,"visual":"push","bar":false},
+    {"id":"push-4","pattern":"push","level":4,"title":"Full Push-up","graduate":"3×10 clean reps","minimum":10,"unit":"reps","sets":3,"visual":"push","bar":false},
+    {"id":"push-5","pattern":"push","level":5,"title":"Diamond Push-up + Pike Push-up","graduate":"3×8–10 each","minimum":8,"unit":"reps","sets":3,"visual":"push","bar":false},
+    {"id":"push-6","pattern":"push","level":6,"title":"Decline Push-up","graduate":"Stretch goal for Month 5–6","minimum":0,"unit":"reps","sets":3,"visual":"incline","bar":false},
+    {"id":"pull-1","pattern":"pull","level":1,"title":"Table/Doorframe Rows · steep angle","graduate":"3×12 clean reps","minimum":12,"unit":"reps","sets":3,"visual":"row","bar":false},
+    {"id":"pull-2","pattern":"pull","level":2,"title":"Table/Doorframe Rows · flatter angle","graduate":"3×12 clean reps","minimum":12,"unit":"reps","sets":3,"visual":"row","bar":false},
+    {"id":"pull-3","pattern":"pull","level":3,"title":"Superman Holds + Reverse Snow Angels","graduate":"3×15 snow angels; holds 20–30 sec","minimum":15,"unit":"reps","sets":3,"visual":"back","bar":false},
+    {"id":"pull-4","pattern":"pull","level":4,"title":"Dead Hang → Negative Pull-ups","graduate":"3×5 clean negatives; slow 5-sec lowering","minimum":5,"unit":"reps","sets":3,"visual":"hang","bar":true},
+    {"id":"pull-5","pattern":"pull","level":5,"title":"Assisted/Jumping Pull-ups → Full Pull-up","graduate":"1 full clean rep","minimum":1,"unit":"reps","sets":1,"visual":"hang","bar":true},
+    {"id":"legs-1","pattern":"legs","level":1,"title":"Bodyweight Squat","graduate":"3×20 clean reps","minimum":20,"unit":"reps","sets":3,"visual":"squat","bar":false},
+    {"id":"legs-2","pattern":"legs","level":2,"title":"Split Squat","graduate":"3×12 per leg","minimum":12,"unit":"reps","sets":3,"visual":"lunge","bar":false},
+    {"id":"legs-3","pattern":"legs","level":3,"title":"Bulgarian Split Squat","graduate":"3×10 per leg","minimum":10,"unit":"reps","sets":3,"visual":"lunge","bar":false},
+    {"id":"legs-4","pattern":"legs","level":4,"title":"Assisted Pistol Squat","graduate":"3×8 per leg","minimum":8,"unit":"reps","sets":3,"visual":"pistol","bar":false},
+    {"id":"legs-5","pattern":"legs","level":5,"title":"Full Pistol Squat","graduate":"Stretch goal for Month 5–6","minimum":0,"unit":"reps","sets":3,"visual":"pistol","bar":false},
+    {"id":"core-1","pattern":"core","level":1,"title":"Knee Plank","graduate":"3×30 sec","minimum":30,"unit":"seconds","sets":3,"visual":"plank","bar":false},
+    {"id":"core-2","pattern":"core","level":2,"title":"Full Plank + Side Plank","graduate":"3×45 sec each","minimum":45,"unit":"seconds","sets":3,"visual":"plank","bar":false},
+    {"id":"core-3","pattern":"core","level":3,"title":"Hollow Body Hold","graduate":"3×30 sec","minimum":30,"unit":"seconds","sets":3,"visual":"hollow","bar":false},
+    {"id":"core-4","pattern":"core","level":4,"title":"Leg Raises","graduate":"3×15 clean reps","minimum":15,"unit":"reps","sets":3,"visual":"raise","bar":false},
+    {"id":"core-5","pattern":"core","level":5,"title":"L-sit progression","graduate":"Stretch goal for Month 5–6","minimum":0,"unit":"seconds","sets":3,"visual":"sit","bar":false}
+  ],
+  "phases": [
+    {"from":1,"to":2,"title":"Foundation","focus":"Learn form, build base reps, first full push-up","description":"Start movements at Level 1–2. Three sets per exercise. Prioritize clean form and consistency."},
+    {"from":3,"to":4,"title":"Growth","focus":"Increase volume and progress up the ladders","description":"Three to four sets per exercise; the source suggests shorter rests and supersets. Move up only when ready."},
+    {"from":5,"to":6,"title":"Definition","focus":"Advanced variations and skill work","description":"Use advanced variations only when ready. The source includes Friday/Saturday finisher circuits and stretch goals."}
+  ]
+}

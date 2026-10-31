@@ -1,0 +1,68 @@
+{
+  "package": "online-180-v1",
+  "days": 180,
+  "items": 540,
+  "counts": {
+    "hadith": 180,
+    "ayah": 180,
+    "dua": 180
+  },
+  "sources": [
+    {
+      "key": "hisn-arabic",
+      "url": "https://raw.githubusercontent.com/asellam/HisnElMuslim/872764ca013116c905f7fc9c3dc972c27cd37d4a/hisn.json",
+      "sha256": "b30a448ef40184b0422c40bd3c372bf2b25bfb5b0539fd3699e6b4fba9459d80",
+      "bytes": 193750
+    },
+    {
+      "key": "bukhari-arabic",
+      "url": "https://raw.githubusercontent.com/fawazahmed0/hadith-api/df57907be35291c91ad6a6691180e22ca9920784/editions/ara-bukhari.json",
+      "sha256": "e34a3402889ca378871da3c5984b7875c680920e93f1c8738ac7afe502179562",
+      "bytes": 9770083
+    },
+    {
+      "key": "quran-pickthall",
+      "url": "https://api.alquran.cloud/v1/quran/en.pickthall",
+      "sha256": "e731d9bce22575faba22b1f3de21c18b647711c33de074b89fe8d6f8384b01c5",
+      "bytes": 1577671
+    },
+    {
+      "key": "quran-uthmani",
+      "url": "https://api.alquran.cloud/v1/quran/quran-uthmani",
+      "sha256": "0df03e1d6da4fc8138208fec1688f2b416f0dd4ebbd514179f3e5e0fbaf4195f",
+      "bytes": 2109200
+    },
+    {
+      "key": "licenses/hisn-mit",
+      "url": "https://raw.githubusercontent.com/asellam/HisnElMuslim/872764ca013116c905f7fc9c3dc972c27cd37d4a/LICENSE.md",
+      "sha256": "65b11add3112689b4a61aa53fb127705522c19eb1a809556a67410e2a335ef00",
+      "bytes": 1072
+    },
+    {
+      "key": "licenses/hadith-unlicense",
+      "url": "https://raw.githubusercontent.com/fawazahmed0/hadith-api/df57907be35291c91ad6a6691180e22ca9920784/LICENSE",
+      "sha256": "6b0382b16279f26ff69014300541967a356a666eb0b91b422f6862f6b7dad17e",
+      "bytes": 1211
+    },
+    {
+      "key": "licenses/tanzil-text-license",
+      "url": "https://tanzil.net/docs/text_license",
+      "sha256": "f58f9477e89e5250133bb4c82e1e374c64c4cb5181b537b713e55ee7d6660a14",
+      "bytes": 7903
+    },
+    {
+      "key": "licenses/quran-cloud-terms",
+      "url": "https://alquran.cloud/terms-and-conditions",
+      "sha256": "2be9ff8c91afe706108140ecf2b4d9d285d56e62bf64c3a9708a50d7a7f78c8f",
+      "bytes": 114512
+    }
+  ],
+  "collection_sha256": "58882b4abc4867d28bd1ed12c0aa9038473389425437c80ab4384f281db5f8b2",
+  "notes": [
+    "Arabic originals are preserved exactly from the referenced datasets; normalization is used only for duplicate detection.",
+    "Quran verses use Al-Fatihah followed by short-surah sequences. The final sequence may end partway through a surah.",
+    "Hadith selection is a source-preserving thematic sampling of shorter complete Bukhari narrations, not a scholarly importance ranking.",
+    "Dua includes supplications and adhkar from Hisn al-Muslim, with source references and repetition counts preserved in provenance.",
+    "No generated translations or inferred authenticity grades. Hadith and Dua translations are intentionally blank; Quran English is Pickthall (1930)."
+  ]
+}
