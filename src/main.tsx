@@ -5,6 +5,7 @@ import { ArrowUpRight, BookOpen, Check, Circle, Dumbbell, LayoutDashboard, ListT
 import { supabase } from './supabase';
 import './style.css';
 import './tasks.css';
+import './modern.css';
 const TaskManager = lazy(() => import('./TaskManager').then(module => ({ default: module.TaskManager })));
 const Dashboard = lazy(() => import('./Dashboard').then(module => ({ default: module.Dashboard })));
 const Expenses = lazy(() => import('./Expenses').then(module => ({ default: module.Expenses })));

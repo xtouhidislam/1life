@@ -6,9 +6,12 @@ import{Modal}from'./Modal';
 import{dhakaDate}from'./task-utils';
 import{knowledgeLabels,knowledgeTargets,knowledgeTemplate,knowledgeValues,parseKnowledgeImport,sourceUrl}from'./knowledge-utils';
 import{KnowledgeOnlinePlan}from'./KnowledgeOnlinePlan';
+import{DailyKnowledgeCard}from'./DailyKnowledgeCard';
+import{BanglaTranslation,hasBanglaTranslation}from'./BanglaTranslation';
 import{bookSuggestions}from'./book-suggestions';
 import type{KnowledgeBook,KnowledgeItem,KnowledgeKind}from'./knowledge-utils';
 import './knowledge.css';
+import './daily-knowledge.css';
 
 type State={counts:{kind:KnowledgeKind;total:number;reviewed:number;memorized:number}[];books:KnowledgeBook[]};
 type Editor={kind:'item';item?:KnowledgeItem}|{kind:'review';item:KnowledgeItem}|{kind:'book';book?:Partial<KnowledgeBook>}|{kind:'reading';book:KnowledgeBook}|{kind:'import'};
@@ -20,12 +23,13 @@ export function Knowledge({userId}:{userId:string}){
  const[search,setSearch]=useState(''),[query,setQuery]=useState(''),[status,setStatus]=useState('all'),[review,setReview]=useState('all'),[archived,setArchived]=useState(false);
  const[loading,setLoading]=useState(true),[busy,setBusy]=useState(false),[error,setError]=useState(''),[formError,setFormError]=useState(''),[notice,setNotice]=useState('');
  const[editor,setEditor]=useState<Editor|null>(null),[archiveTarget,setArchiveTarget]=useState<{id:string;title:string;book:boolean;archived:boolean}|null>(null);
+ const[dailyRefresh,setDailyRefresh]=useState(0);
  const[today,setToday]=useState(dhakaDate());const request=useRef(0),locked=useRef(false),readingRequest=useRef('');
  useEffect(()=>{const timer=setInterval(()=>setToday(dhakaDate()),15000);return()=>clearInterval(timer);},[]);
  async function load(){const sequence=++request.current;setLoading(true);setError('');
   try{const results=await Promise.all([supabase!.rpc('knowledge_state'),...(tab==='books'?[]:[supabase!.rpc('knowledge_list',{p_kind:tab,p_search:query,p_status:status,p_review:review,p_archived:archived,p_page:page})])]);
    for(const result of results)if(result.error)throw result.error;
-   if(sequence!==request.current)return;setData(results[0].data as State);
+   if(sequence!==request.current)return;setData(results[0].data as State);setDailyRefresh(value=>value+1);
    if(results[1]){const items=results[1].data as typeof list;if(!items.items.length&&page>0){setPage(Math.max(0,Math.ceil(items.total/20)-1));return;}setList(items);}
   }catch(e){if(sequence===request.current)setError(errorMessage(e));}finally{if(sequence===request.current)setLoading(false);}
  }
@@ -59,7 +63,7 @@ export function Knowledge({userId}:{userId:string}){
  function downloadTemplate(){const blob=new Blob([JSON.stringify(knowledgeTemplate,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='1life-knowledge-template.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
  const books=data?.books.filter(book=>book.archived===archived&&(!query||`${book.title} ${book.author}`.toLowerCase().includes(query.toLowerCase())))??[];
 
- return <div className="knowledge"><div className="knowledge-toolbar"><div className="knowledge-tabs" role="tablist" aria-label="Knowledge collections">{(['hadith','ayah','dua','books']as const).map(value=><button key={value} role="tab" aria-selected={tab===value} onClick={()=>switchTab(value)}>{knowledgeLabels[value]}</button>)}</div><div><button className="icon-button" aria-label="Refresh knowledge" disabled={busy||loading} onClick={load}><RefreshCw size={15}/></button><button className="quiet-button" disabled={busy} onClick={()=>open({kind:'import'})}><FileUp size={13}/>Import JSON</button></div></div>
+ return <div className="knowledge"><DailyKnowledgeCard refreshKey={dailyRefresh}/><div className="knowledge-source-directory"><span>Read in Bengali with IRD</span><a href="https://ihadis.com/bn" target="_blank" rel="noreferrer">iHadis<ArrowUpRight size={12}/></a><a href="https://quranmazid.com" target="_blank" rel="noreferrer">Quran Mazid<ArrowUpRight size={12}/></a><a href="https://duaruqyah.com" target="_blank" rel="noreferrer">Dua &amp; Ruqyah<ArrowUpRight size={12}/></a></div><div className="knowledge-toolbar"><div className="knowledge-tabs" role="tablist" aria-label="Knowledge collections">{(['hadith','ayah','dua','books']as const).map(value=><button key={value} role="tab" aria-selected={tab===value} onClick={()=>switchTab(value)}>{knowledgeLabels[value]}</button>)}</div><div><button className="icon-button" aria-label="Refresh knowledge" disabled={busy||loading} onClick={load}><RefreshCw size={15}/></button><button className="quiet-button" disabled={busy} onClick={()=>open({kind:'import'})}><FileUp size={13}/>Import JSON</button></div></div>
   {notice&&<p className="message" role="status">{notice}</p>}{error&&<div className="message error" role="alert">{error}<button className="text-link" onClick={load}>Retry knowledge</button></div>}
   <section className="knowledge-hero"><div><span className="eyebrow">KNOWLEDGE YOU CARRY WITH YOU</span><h2>A little learning.<br/>A lasting connection.</h2><p>Read, reflect, memorize, and return to what matters.</p></div><BookOpen size={65} strokeWidth={1}/></section>
   <KnowledgeOnlinePlan onInstalled={()=>{setNotice("180-day online collection loaded. Daily cards follow your start date.");void load();}}/>{data&&<div className="knowledge-counts">{(['hadith','ayah','dua','books']as const).map(kind=>{const counts=data.counts.find(c=>c.kind===kind),total=kind==='books'?data.books.filter(b=>!b.archived).length:counts?.total??0,completed=kind==='books'?data.books.filter(b=>!b.archived&&b.pages_read>=b.total_pages).length:counts?.memorized??0;return <button key={kind} aria-label={`Open ${knowledgeLabels[kind]}`} onClick={()=>switchTab(kind)}><span>{knowledgeLabels[kind]}</span><strong>{total}<small>/{knowledgeTargets[kind]} goal</small></strong><div className="knowledge-track"><span style={{width:`${Math.min(100,total/knowledgeTargets[kind]*100)}%`}}/></div><small>{completed} {kind==='books'?'finished':'memorized'}{kind!=='books'&&` · ${counts?.reviewed??0} reviewed`}</small></button>;})}</div>}
@@ -75,5 +79,5 @@ export function Knowledge({userId}:{userId:string}){
  </div>;
 }
 
-export function KnowledgeText({item}:{item:KnowledgeItem}){return <div className="knowledge-text"><p className="knowledge-original" dir="auto">{item.original_text}</p>{item.translation&&<><p className="knowledge-translation">{item.translation}</p><p className="translation-credit">Translation: {item.translator}</p></>}<p className="knowledge-reference">{item.reference}{item.grade&&` · ${item.grade}`}</p>{item.source_metadata?.provider&&<p className="translation-credit">Source: {item.source_metadata.provider}</p>}{typeof item.source_metadata?.repetition_count==='number'&&<p className="translation-credit">Source repetition count: {item.source_metadata.repetition_count}</p>}{item.source_metadata?.license_notice&&<details><summary>Arabic text attribution and license</summary><pre className="source-license">{item.source_metadata.license_notice}</pre><a href="https://tanzil.net" target="_blank" rel="noreferrer">Tanzil Project</a></details>}<a className="knowledge-source-link" href={item.source_url} target="_blank" rel="noreferrer">Open source<ArrowUpRight size={12}/></a></div>;}
+export function KnowledgeText({item}:{item:KnowledgeItem}){return <div className="knowledge-text"><p className="knowledge-original" dir="auto">{item.original_text}</p><BanglaTranslation item={item}/>{item.translation&&!hasBanglaTranslation(item)&&<><p className="knowledge-translation">{item.translation}</p><p className="translation-credit">Translation: {item.translator}</p></>}<p className="knowledge-reference">{item.reference}{item.grade&&` · ${item.grade}`}</p>{item.source_metadata?.provider&&<p className="translation-credit">Source: {item.source_metadata.provider}</p>}{typeof item.source_metadata?.repetition_count==='number'&&<p className="translation-credit">Source repetition count: {item.source_metadata.repetition_count}</p>}{item.source_metadata?.license_notice&&<details><summary>Arabic text attribution and license</summary><pre className="source-license">{item.source_metadata.license_notice}</pre><a href="https://tanzil.net" target="_blank" rel="noreferrer">Tanzil Project</a></details>}<a className="knowledge-source-link" href={item.source_url} target="_blank" rel="noreferrer">Open source<ArrowUpRight size={12}/></a></div>;}
 function LibraryEmpty({title,text}:{title:string;text:string}){return <div className="empty-state library-empty"><Leaf size={27}/><h3>{title}</h3><p>{text}</p></div>;}

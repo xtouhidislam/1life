@@ -7,7 +7,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node scripts/test-tasks.mjs && node scripts/test-dashboard.mjs && node scripts/test-expenses.mjs && node scripts/test-learning.mjs && node scripts/test-exercise.mjs && node scripts/test-knowledge.mjs && node scripts/test-online-knowledge.mjs"
+    "test": "node scripts/test-tasks.mjs && node scripts/test-dashboard.mjs && node scripts/test-expenses.mjs && node scripts/test-learning.mjs && node scripts/test-exercise.mjs && node scripts/test-knowledge.mjs && node scripts/test-online-knowledge.mjs && node scripts/test-bangla-knowledge.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.0.0",

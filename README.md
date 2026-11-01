@@ -13,3 +13,10 @@ Current stage: all planned application sections are implemented locally. A sourc
 Install Node.js if needed, then run `npm install` followed by `npm run dev`. Open http://localhost:5173. `npm run build` checks TypeScript and creates the production build.
 
 Copy `.env.example` to `.env.local` and fill in your Supabase project URL and publishable key. This workspace's `.env.local` is already configured and excluded from Git. Vite uses the `VITE_` prefix rather than `NEXT_PUBLIC_`.
+
+## Vercel deployment
+
+Follow [the Vercel deployment and production checklist](docs/VERCEL_DEPLOYMENT.md). The modern UI uses a shared visual system in `src/modern.css`; the database and saved progress are unchanged.
+
+Bangla translations are displayed beneath all 540 collection entries. See [translation sources and draft status](docs/BANGLA_TRANSLATIONS.md): 463 source-backed translations and 77 visibly labeled Dua drafts pending independent review. No new migration is needed.
+#

@@ -42,6 +42,8 @@ const assert=require('node:assert/strict');
   });
   await page.goto('http://127.0.0.1:5173/');
   await page.getByRole('heading',{name:'Your everyday progress'}).waitFor();
+  if(process.env.UI_CAPTURE){await page.setViewportSize({width:1440,height:1100});await page.screenshot({path:process.env.UI_CAPTURE,fullPage:true});}
+
   assert.ok((await page.getByText('Not set',{exact:true}).count())>0);
   await page.getByRole('button',{name:'Log focus',exact:true}).click();
   await page.getByLabel('Title',{exact:true}).fill('Python focus');await page.getByLabel('Quantity',{exact:true}).fill('90');
@@ -76,6 +78,7 @@ const assert=require('node:assert/strict');
   await page.getByRole('heading',{name:'Extra focus 20',exact:true}).waitFor();
   await page.getByLabel('Journal month',{exact:true}).fill('2020-01');await page.getByRole('heading',{name:'No focus entries this month.'}).waitFor();
   await page.setViewportSize({width:390,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),'Dashboard must fit mobile');
+  if(process.env.UI_CAPTURE)await page.screenshot({path:process.env.UI_CAPTURE.replace('.png','-mobile.png'),fullPage:true});
   await page.getByRole('button',{name:'Log reading',exact:true}).click();assert.ok(await page.evaluate(()=>document.querySelector('dialog').getBoundingClientRect().right<=innerWidth),'Dialog must fit mobile');await page.getByRole('button',{name:'Close dialog',exact:true}).click();
   missing=true;await page.getByRole('button',{name:'Refresh',exact:true}).click();await page.getByRole('alert').filter({hasText:'Dashboard setup is needed'}).waitFor();
   missing=false;await page.getByRole('button',{name:'Retry dashboard',exact:true}).click();await page.getByRole('heading',{name:'Your everyday progress'}).waitFor();

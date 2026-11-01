@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600&display=swap');
+:root .knowledge-daily{background:#fffef8;border:1px solid #ffffffa6;border-radius:27px;margin-bottom:14px;overflow:hidden;min-width:0}
+:root .daily-reader-tabs{display:flex;background:#e9ebdf;border-bottom:1px solid #d9decc}
+:root .daily-reader-tabs>button{display:flex;justify-content:center;align-items:center;gap:10px;flex:1;min-width:0;padding:21px 12px;border-bottom:2px solid transparent;color:#727a66;background:none;font-family:'Noto Serif Bengali',serif;font-size:17px}
+:root .daily-reader-tabs>button[aria-selected=true]{background:#dde5ce;color:#3f5c2d;border-bottom-color:#6e8d51}
+:root .daily-reader-tabs svg{flex-shrink:0}
+:root .daily-reader-content{padding:25px 29px;min-height:300px}
+:root .daily-reader-meta{display:flex;justify-content:space-between;gap:12px;margin-bottom:20px;color:#7b826e;font-size:11px}
+:root .daily-reader-arabic{font-family:Georgia,'Times New Roman',serif;white-space:pre-wrap;text-align:right;line-height:2.1;font-size:29px;letter-spacing:0;padding:22px 25px;border-radius:20px;background:#f0f1e6;color:#414b32;margin:0 0 24px;overflow-wrap:anywhere;max-height:280px;overflow-y:auto}
+:root .daily-reader-translation{font-family:'DM Sans','Noto Serif Bengali',sans-serif;color:#4f5843;font-size:15px;line-height:2;white-space:pre-wrap;overflow-wrap:anywhere;max-height:260px;overflow-y:auto}
+:root .daily-reader-item .knowledge-source-link{font-size:13px;color:#536f3e;line-height:1.8}
+:root .daily-reader-credit{font-size:11px;color:#7b826e;line-height:1.9;overflow-wrap:anywhere}
+:root .daily-reader-license{font-size:11px;color:#7b826e}
+:root .daily-reader-footer{padding:15px 26px;border-top:1px solid #e8ebde;display:flex;justify-content:space-between;align-items:center}
+:root .daily-reader-footer>div{display:flex;gap:7px}
+:root .daily-reader-position{display:flex;align-items:center;gap:6px}
+:root .daily-reader-position>span{width:7px;height:7px;border-radius:20px;background:#d9dece}
+:root .daily-reader-position>.current{background:#7c9a5e;width:25px}
+:root .daily-reader-footer .icon-button{background:#eeefe6;border-radius:12px}
+:root .daily-reader-empty{padding:30px 10px;text-align:center;color:#7b8969}
+:root .daily-reader-empty h2{font-size:20px;margin:14px 0}
+:root .daily-reader-empty p{font-size:13px;max-width:470px;margin:auto}
+:root .knowledge-source-directory{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:0 0 28px;padding:10px 4px;color:#758265;font-size:12px}
+:root .knowledge-source-directory>span{margin-right:auto}
+:root .knowledge-source-directory>a{display:inline-flex;align-items:center;gap:4px;color:#4f683c}
+:root .dashboard-project{margin-top:22px}
+@media(max-width:600px){:root .daily-reader-tabs>button{font-size:13px;padding:17px 7px;gap:6px}:root .daily-reader-tabs svg{width:15px}:root .daily-reader-content{padding:21px 18px;min-height:290px}:root .daily-reader-arabic{padding:18px;font-size:25px;max-height:240px}:root .daily-reader-translation{font-size:14px}:root .daily-reader-meta{font-size:10px}:root .daily-reader-meta .eyebrow{font-size:8px}:root .daily-reader-footer{padding:13px 18px}:root .knowledge-source-directory{gap:12px;font-size:11px}:root .knowledge-source-directory>span{width:100%}}

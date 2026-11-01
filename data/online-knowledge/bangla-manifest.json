@@ -1,0 +1,549 @@
+{
+  "checked_on": "2026-11-01",
+  "entries": 540,
+  "source_backed": 463,
+  "draft_duas": 77,
+  "sha256": "331185158a4002b3afc5e9fc9075047e16074d4839cb3de83bfe85cc840e8b53",
+  "sources": [
+    {
+      "file": "bukhari-bangla.json",
+      "sha256": "8f5e574422e2c2eecaa42bcd80ce90d9a1f29c82c2143bc789965dc364d91156"
+    },
+    {
+      "file": "quran-json-bangla.json",
+      "sha256": "894086074f0e637d0488de1e6cb48a729dd60d38bfde3326bb6a2c66bf171a71"
+    },
+    {
+      "file": "dua-bangla-chapter-0.json",
+      "sha256": "37de82172d60ab385923238479d404f19c432aafdc2ac7ac43954eb88e6e1f1e"
+    },
+    {
+      "file": "dua-bangla-chapter-1.json",
+      "sha256": "bbafc5f063c50bd04ba35009ee83eb83f1d4f3b1d34153f6b7ed71ec5b126946"
+    },
+    {
+      "file": "dua-bangla-chapter-10.json",
+      "sha256": "939d2654c53897461deba59e6e1c0da78a572e2c550e7ceb8af729db0a3e3eac"
+    },
+    {
+      "file": "dua-bangla-chapter-100.json",
+      "sha256": "30d5cd3a5e2b6c0e4b052e4f22ca83c0dc333fb59f981f6d57c69316c224ada4"
+    },
+    {
+      "file": "dua-bangla-chapter-101.json",
+      "sha256": "afee295195e9aed83bd4c7fa91e71f8e563d31666046002b9fd2d7ed33877f45"
+    },
+    {
+      "file": "dua-bangla-chapter-102.json",
+      "sha256": "fc5394b50580020b77974954d532894abb20d23ac2ae6548e3d0b94b59693279"
+    },
+    {
+      "file": "dua-bangla-chapter-103.json",
+      "sha256": "3d0f6f628a070e89a4f886b13b797001719ac83c089ec022016478c607c09ea5"
+    },
+    {
+      "file": "dua-bangla-chapter-104.json",
+      "sha256": "b1313a07cd86c39c6a755ff764c4366f1796b92f92c7e95fb1e53f89bf8e07f1"
+    },
+    {
+      "file": "dua-bangla-chapter-105.json",
+      "sha256": "f0b5a95557ddbe017c4d1bf1bd01ff1c9b12482c6e6996e02078995443b1baca"
+    },
+    {
+      "file": "dua-bangla-chapter-106.json",
+      "sha256": "9a4b7e6b3aaa3ba1cb34ff32b79866838af616f8f352edda2e1d5ba253b0996f"
+    },
+    {
+      "file": "dua-bangla-chapter-107.json",
+      "sha256": "da3592a3135b92e9c6e63f1bc7c7d5857d4b734cd3fafdd710699ab68083c203"
+    },
+    {
+      "file": "dua-bangla-chapter-108.json",
+      "sha256": "ba13993ee39abc72beaa032a5717198e7625317d062c4c6eb7f26b6d90548d39"
+    },
+    {
+      "file": "dua-bangla-chapter-109.json",
+      "sha256": "4631c43423894dd001f2932281db4815ed68c0797b0419e6417b45bc21c9f3ef"
+    },
+    {
+      "file": "dua-bangla-chapter-11.json",
+      "sha256": "c5c227b4efe8782eda705d8935416e4d05411b03caa2b26d2b9ef9dcb228d036"
+    },
+    {
+      "file": "dua-bangla-chapter-110.json",
+      "sha256": "b571bdabc645a05a0891017e71c298949e6e01dceba53bd2c76216fcd9738870"
+    },
+    {
+      "file": "dua-bangla-chapter-111.json",
+      "sha256": "e8719aecedd9bc20de13a3b33d4efddb9e0a9eb2f88ab597ddde7df046beb400"
+    },
+    {
+      "file": "dua-bangla-chapter-112.json",
+      "sha256": "418868fced765f1cbd2b6f4c19c8b65ffb8b8a0563dd78ddf7c2e777af0fb0ed"
+    },
+    {
+      "file": "dua-bangla-chapter-113.json",
+      "sha256": "0783a6591cc1665db1f0f2b48315b41264cd61131f86ddc59e61cf1cf5736e20"
+    },
+    {
+      "file": "dua-bangla-chapter-114.json",
+      "sha256": "5535b1e8307d9b79b19b4c34d6d334d4ad5d9d46598b7aaedd51978876441f70"
+    },
+    {
+      "file": "dua-bangla-chapter-115.json",
+      "sha256": "f37529ed56183b0e6b972268ea3189b9862beb85cac2b27ec09ac4012915423a"
+    },
+    {
+      "file": "dua-bangla-chapter-116.json",
+      "sha256": "83dd6cf32cf00f404fe322520fdb0c3e8570ad955a7b2d82a5dfbbe554f13732"
+    },
+    {
+      "file": "dua-bangla-chapter-117.json",
+      "sha256": "d03a791bbba84c6dfdc5814dd0bdf7e587d4da1cbcb7a681fa0b86cc5b8397ee"
+    },
+    {
+      "file": "dua-bangla-chapter-118.json",
+      "sha256": "aa7b0b45102b14d12cf56b27537cfa97aa96f1203f3cde663126198dfe48d481"
+    },
+    {
+      "file": "dua-bangla-chapter-119.json",
+      "sha256": "3cbd3c7567f1d197ba515c829213fe7c984ea412a46af3d0a7dc9771ce2c6400"
+    },
+    {
+      "file": "dua-bangla-chapter-12.json",
+      "sha256": "3973567a1d86e92c18088a2f8adc7190d1bd00c929b6c49d6862a103738516f2"
+    },
+    {
+      "file": "dua-bangla-chapter-120.json",
+      "sha256": "89bc05bef2e9166a5aac7cf0ed3d27dc8332bb992b92b4f42e673047b52b4d94"
+    },
+    {
+      "file": "dua-bangla-chapter-121.json",
+      "sha256": "8ac20c6e470091b0ad5d4bc2d970818392a6e1faf454f1776ed2eacdbb0087f8"
+    },
+    {
+      "file": "dua-bangla-chapter-122.json",
+      "sha256": "520f4f19618a7668961ec897adfc6fea2570ca316c5e6e6824a52c1502b130ab"
+    },
+    {
+      "file": "dua-bangla-chapter-123.json",
+      "sha256": "bcce6745892928a926d8a7e5da4260e65dcf0399cc3fbdf0a0afbfd1fb3c47a4"
+    },
+    {
+      "file": "dua-bangla-chapter-124.json",
+      "sha256": "85759d8b81d8f98f8b5ab10dc41b079410031ec63c7dfbc0ea0173a45fb7a49a"
+    },
+    {
+      "file": "dua-bangla-chapter-125.json",
+      "sha256": "c8449fbbabb195f45df4397bed6c82fae48c4b8940e75c9982aa933ed990072e"
+    },
+    {
+      "file": "dua-bangla-chapter-126.json",
+      "sha256": "d9af5c88651788e8d2b903e7ebf96e5378daa8a6699a8e84585660fb98bd1aad"
+    },
+    {
+      "file": "dua-bangla-chapter-127.json",
+      "sha256": "40579ec921e823001963ed33365759a43b680bd0b1d9d02086b897d601c5cc19"
+    },
+    {
+      "file": "dua-bangla-chapter-128.json",
+      "sha256": "6b6b64203cda08b0e92f1c0e1f28bd87b5d5af3fb65fe1416d9a15b38e556232"
+    },
+    {
+      "file": "dua-bangla-chapter-129.json",
+      "sha256": "e4497ffdb1148653fbc9ce2206a617d1923b307f34e4fd89b59e5679e04af364"
+    },
+    {
+      "file": "dua-bangla-chapter-13.json",
+      "sha256": "9b6f034b8a7547da82053c9b4ad4448dd355d2a5086e9c6ebd333cdb4a8399a4"
+    },
+    {
+      "file": "dua-bangla-chapter-130.json",
+      "sha256": "56850657314ce67ccadcfe3f041966ab826277d011c417b7285a7054933b6665"
+    },
+    {
+      "file": "dua-bangla-chapter-131.json",
+      "sha256": "32690a430d7e14895187583a5e6dcd8eb882fa56dc7d46359819588be76c7cc4"
+    },
+    {
+      "file": "dua-bangla-chapter-132.json",
+      "sha256": "e07c019d4a974f73302986ebdbc3085c25b1bf31787ec23e702aca5a1f64e86f"
+    },
+    {
+      "file": "dua-bangla-chapter-14.json",
+      "sha256": "24849520d566db7b88b5519e540ff94c475be5b9489064036e3d120648f1ea7b"
+    },
+    {
+      "file": "dua-bangla-chapter-15.json",
+      "sha256": "89cf79c7dc1186a8578f8d24ce492e6665e19f23447eeada832833746888c1f8"
+    },
+    {
+      "file": "dua-bangla-chapter-16.json",
+      "sha256": "e7aee89723adc4d482ab194bab24e320c919cbd51f61f5ab31c53725b57c2e74"
+    },
+    {
+      "file": "dua-bangla-chapter-17.json",
+      "sha256": "a3896673a11187b628a988755fb8d7f837fca0a15855812fd029af7eec8a568c"
+    },
+    {
+      "file": "dua-bangla-chapter-18.json",
+      "sha256": "217796a0e5a91d55904b9518d599ca7c7a892451fa7f365b32f55028e444c085"
+    },
+    {
+      "file": "dua-bangla-chapter-19.json",
+      "sha256": "e4726bd3dd1fbdd39031a60196ca1ed0dc6dc839dc84c87aaeaf3ee72be75fe2"
+    },
+    {
+      "file": "dua-bangla-chapter-2.json",
+      "sha256": "b9758f1036cfa3b66d893991119d7cdfb808815475f62ff00b96c7ce1e67f70c"
+    },
+    {
+      "file": "dua-bangla-chapter-20.json",
+      "sha256": "bee87ac7b512934c438240c34e1ca71d9137e9837dfd209d35ca0aa6988353d5"
+    },
+    {
+      "file": "dua-bangla-chapter-21.json",
+      "sha256": "5c527b10f02e783515024fc296cd26c69390c3bb579f0c6d9faf218af6774fbe"
+    },
+    {
+      "file": "dua-bangla-chapter-22.json",
+      "sha256": "49564a87701d3120a94bd4adbf2ead27851b3aede467a6ca71e53494dcfeffa3"
+    },
+    {
+      "file": "dua-bangla-chapter-23.json",
+      "sha256": "6229cba0cb9a240115f29e26694c2fbca873b155cb0fb103778a942f6a58fdf9"
+    },
+    {
+      "file": "dua-bangla-chapter-24.json",
+      "sha256": "e3cd1cbd803533f56594b2041eb902cc62a213a41284317d59e58e539d42efec"
+    },
+    {
+      "file": "dua-bangla-chapter-25.json",
+      "sha256": "9c8cf7d07ca3697208dd3bcf0425f4d5605e7978ccc17275ed71751950c254b1"
+    },
+    {
+      "file": "dua-bangla-chapter-26.json",
+      "sha256": "4888baf799ebe45d3cbcd7bbde04656b46f3e44ab2514919fdf82486a833d909"
+    },
+    {
+      "file": "dua-bangla-chapter-27.json",
+      "sha256": "dd068f3f37b68285a05477a06e565070749d38472a2463be4de2a9d0c918ac5e"
+    },
+    {
+      "file": "dua-bangla-chapter-28.json",
+      "sha256": "97584e85c7be8d41d49a6b6a2ab01e0188bffaf0adefe89e5643370104e6a9da"
+    },
+    {
+      "file": "dua-bangla-chapter-29.json",
+      "sha256": "b8decce5db6b9dff819591c918cf01c53cc70e77f7733bb6f216c165c6c35c5a"
+    },
+    {
+      "file": "dua-bangla-chapter-3.json",
+      "sha256": "315225c466e1974d4bf2b44e024693300c430c6673ca1585b86baf05dcdd9a2f"
+    },
+    {
+      "file": "dua-bangla-chapter-30.json",
+      "sha256": "e66149314c27c474d87e1c7288d1076b7e926d1fb5998ad5dc2cc2829ca2f5e6"
+    },
+    {
+      "file": "dua-bangla-chapter-31.json",
+      "sha256": "bf2884bc74eef38a0161a997a09fa9f5ac0a2b73a44a38f3ba55cd89f890c72f"
+    },
+    {
+      "file": "dua-bangla-chapter-32.json",
+      "sha256": "97196eba7994182b04cfe70c6ec686e61142ab9a271f7d50a28fbda7dc494fa9"
+    },
+    {
+      "file": "dua-bangla-chapter-33.json",
+      "sha256": "8dbf32830d489c1cb95da5b4fa6f862cfc0b652477f03210f564c409a112913d"
+    },
+    {
+      "file": "dua-bangla-chapter-34.json",
+      "sha256": "49c92fe1adea7452265561468dfbd6b722434fef284f69b1228c5c8c925e962a"
+    },
+    {
+      "file": "dua-bangla-chapter-35.json",
+      "sha256": "6fb0bca45ef1c83129ff119f30ce54ee72caf979471478184ab8744455c702a1"
+    },
+    {
+      "file": "dua-bangla-chapter-36.json",
+      "sha256": "7e6872507831d7d194817b29ad89ccbe5fbb54f9be41cf91104bba0b639879dc"
+    },
+    {
+      "file": "dua-bangla-chapter-37.json",
+      "sha256": "c90c924f9177e6fde65f3408f7973dd712c3b8d18d3b6e0aeb811e771642bbb2"
+    },
+    {
+      "file": "dua-bangla-chapter-38.json",
+      "sha256": "b33868af7355d3bb715462cf63d62dd13a03dc529eaa833a4e94730e6d4917de"
+    },
+    {
+      "file": "dua-bangla-chapter-39.json",
+      "sha256": "29182ade6942eec4c275a00b07717ca2377979547fbcda4e10a932eb58cd3a00"
+    },
+    {
+      "file": "dua-bangla-chapter-4.json",
+      "sha256": "28ddceafecdc8098e63f6444c5bedf72bc0a590ea150b18dddd8fe90646bf816"
+    },
+    {
+      "file": "dua-bangla-chapter-40.json",
+      "sha256": "b468c29c32e8b06631553041e242f36ab89049e0a515a3cf6ffa274c1121acac"
+    },
+    {
+      "file": "dua-bangla-chapter-41.json",
+      "sha256": "dc5515e8c594419b7150615557fce8a7b1967cf3228ec5e81b6dd93376cf1c5c"
+    },
+    {
+      "file": "dua-bangla-chapter-42.json",
+      "sha256": "aa4d918b8c0ee589d6290aae2188b0a1af3fdf6f273bcd8c1d8556e83f1bf236"
+    },
+    {
+      "file": "dua-bangla-chapter-43.json",
+      "sha256": "ca9cb36b37b3e0f13f0e9c7583fd56df2c78c099b1057469b0cd43907f276c7b"
+    },
+    {
+      "file": "dua-bangla-chapter-44.json",
+      "sha256": "51d94fc817d4a640f8fc4656cb659e0e526ec8ca1c917796cf03a6821f8377dc"
+    },
+    {
+      "file": "dua-bangla-chapter-45.json",
+      "sha256": "a2136fec60c09723abd3e4fca70e98d765a5dd741284b330ed1d0b2a3575c551"
+    },
+    {
+      "file": "dua-bangla-chapter-46.json",
+      "sha256": "c826b5e39f2d1a5a51e3d4411188019dfc4d6ec81b1c80a947af8946267eb32c"
+    },
+    {
+      "file": "dua-bangla-chapter-47.json",
+      "sha256": "0ff9a78c62ae2444aae79fbe386fa05727b89e346dda6973111583f1760ca369"
+    },
+    {
+      "file": "dua-bangla-chapter-48.json",
+      "sha256": "571b7934bf90f5ddaee7aec278f06de69c066f38dd9be3f33586cba0f21611a0"
+    },
+    {
+      "file": "dua-bangla-chapter-49.json",
+      "sha256": "8f91144222a6e344169efabe17cc7f20c26beb0e31a0f4c344716c6f73422f81"
+    },
+    {
+      "file": "dua-bangla-chapter-5.json",
+      "sha256": "1e84156738166ed50575750615aa16ce49c3e3290bf2b6896d6c628a64c0bd46"
+    },
+    {
+      "file": "dua-bangla-chapter-50.json",
+      "sha256": "ef8a4a5effe02513b3e5f5d116c8a3140ad47c2b273974fbbbc02e5246371502"
+    },
+    {
+      "file": "dua-bangla-chapter-51.json",
+      "sha256": "9723eb4bf79c470d334eb30409541f0461b1846041b95514b239c9889faf1861"
+    },
+    {
+      "file": "dua-bangla-chapter-52.json",
+      "sha256": "d7859055208e826a809b5f891cbfe80422862476d9a6af2a832db23f02863ec9"
+    },
+    {
+      "file": "dua-bangla-chapter-53.json",
+      "sha256": "532274bfd90c3ec94bd85bc7a58c4d557b48a7fc6c95c057f1968420a4102f48"
+    },
+    {
+      "file": "dua-bangla-chapter-54.json",
+      "sha256": "ec8e9b6989a68b63cfb7dd5640b0cf6068f31806601625e0eb5a4ca11e814bb6"
+    },
+    {
+      "file": "dua-bangla-chapter-55.json",
+      "sha256": "53989211fea510b1cb5123450fd6907e4e4c79c41025dcc40fc221e05c9bde8c"
+    },
+    {
+      "file": "dua-bangla-chapter-56.json",
+      "sha256": "b8702134bde71a77468b64c2b2936117df6b86ce2d72ea06712c64aa7f18ab9c"
+    },
+    {
+      "file": "dua-bangla-chapter-57.json",
+      "sha256": "d230bb4caffba72eec32c09e36b6b0041b7cd6b19848aea3c4e415067463326d"
+    },
+    {
+      "file": "dua-bangla-chapter-58.json",
+      "sha256": "5e3d7fbd58de3bb69df288a10f6ee66e3efad52c6e25d2a16f25db127dd09f0c"
+    },
+    {
+      "file": "dua-bangla-chapter-59.json",
+      "sha256": "a7431f6fa6b528466baed13dc45fd1e87b6635f434a66bd6424f289d180647a4"
+    },
+    {
+      "file": "dua-bangla-chapter-6.json",
+      "sha256": "70af5cde351517711b678ae1545f192018139318338c1f9b5c272d105e9fcd2b"
+    },
+    {
+      "file": "dua-bangla-chapter-60.json",
+      "sha256": "005bb4293dd041a974c9d71bebaecbf25697c5217c81cf3867e709dd0bc7602c"
+    },
+    {
+      "file": "dua-bangla-chapter-61.json",
+      "sha256": "e62c46d703d131704f42bf1ea87863ca2a4ec54f1a77cdb550c7a24d0d9044ad"
+    },
+    {
+      "file": "dua-bangla-chapter-62.json",
+      "sha256": "11f6c64279d1cd6da3642dded5a83d96f6260857d5709cc92a9613708dcd2eec"
+    },
+    {
+      "file": "dua-bangla-chapter-63.json",
+      "sha256": "36385bc494cf24ab7c717696bd9c6bfff9927d7f3b2ca82a90cfcaf86eabc446"
+    },
+    {
+      "file": "dua-bangla-chapter-64.json",
+      "sha256": "1c48ceaecf146ad46a5497cb49098c335500ecfa53e21ad9adc031622c475fd8"
+    },
+    {
+      "file": "dua-bangla-chapter-65.json",
+      "sha256": "8c9d6291533893d8ba1ae0ecbb10290a068c06f0bea4f831bc7a1e6fcf0e5d5d"
+    },
+    {
+      "file": "dua-bangla-chapter-66.json",
+      "sha256": "3f39a017b87f3361b16de7a38467936dbe20e7a717202c6880f2524ffe27e585"
+    },
+    {
+      "file": "dua-bangla-chapter-67.json",
+      "sha256": "7584b3c0f62f314e13036e585d9aa304332654c5c9553391dda2ad7630c0fdc0"
+    },
+    {
+      "file": "dua-bangla-chapter-68.json",
+      "sha256": "9ebb4e4cafa1da2d3ee356b337f100f22864609006f9d291e2f2b82a95c5c750"
+    },
+    {
+      "file": "dua-bangla-chapter-69.json",
+      "sha256": "041d12360b305867c6de0653a392ba55b36eb95007e9e756ec6ff288516a6d3e"
+    },
+    {
+      "file": "dua-bangla-chapter-7.json",
+      "sha256": "58d98b0611ebf57c35bf62d36456fb097836a214da8fb272721ba4b839b9c292"
+    },
+    {
+      "file": "dua-bangla-chapter-70.json",
+      "sha256": "7e98ee9978bf0ad085a417598d97756692162eb9cc6d3633264e7f1b7e3520b2"
+    },
+    {
+      "file": "dua-bangla-chapter-71.json",
+      "sha256": "903a64fe206fccb7ee373faa3cd4972c46def5ef741fbf56e917768e724a7d4e"
+    },
+    {
+      "file": "dua-bangla-chapter-72.json",
+      "sha256": "ca983705eb94da56aff4194f47658b90a4e5762d8e738d09b07038535364efc3"
+    },
+    {
+      "file": "dua-bangla-chapter-73.json",
+      "sha256": "6790dfddd893a559e7614a60524ff5916f1728f738284fe3253f91a838cc5ade"
+    },
+    {
+      "file": "dua-bangla-chapter-74.json",
+      "sha256": "35d2883215f53dab79e0d2fb7e7e33ce3b65036b794e6b75407474a3a677d573"
+    },
+    {
+      "file": "dua-bangla-chapter-75.json",
+      "sha256": "36c78041b5dd9c25de2499fd278c687585d16cdef9f05f76895b9b51a4bf5707"
+    },
+    {
+      "file": "dua-bangla-chapter-76.json",
+      "sha256": "367efc8b1bac22dd2565860787cacd08d43670fb76b4d607d4577ea44b804f2a"
+    },
+    {
+      "file": "dua-bangla-chapter-77.json",
+      "sha256": "b5049fdf9fbe17822e5410b504987af30c5251c3ddcff20709c88bce1dc86e58"
+    },
+    {
+      "file": "dua-bangla-chapter-78.json",
+      "sha256": "6ce33421457e3a53bd7d89b9873ed3823b187eeee68306a2a2fa561fb79f0e87"
+    },
+    {
+      "file": "dua-bangla-chapter-79.json",
+      "sha256": "88cd68f7eca3a402c8a124b590ed16280cf17e50662d6208b8b19260c6a97711"
+    },
+    {
+      "file": "dua-bangla-chapter-8.json",
+      "sha256": "2bccd52af02edb0c4863abbab4c0bd03a350b68f53190c7cae3f90e2fc8d3354"
+    },
+    {
+      "file": "dua-bangla-chapter-80.json",
+      "sha256": "2164ac39de3b4f0ba39a7be21ab51f78c2a3853df96bdc85cc91c209c5da2ac6"
+    },
+    {
+      "file": "dua-bangla-chapter-81.json",
+      "sha256": "6e9c3c97bfa993d034991624688b7f7e973224c6f96c48ec40cc814aa0a290c5"
+    },
+    {
+      "file": "dua-bangla-chapter-82.json",
+      "sha256": "b3c81652429de939761944d6d7aa73296cf5f8efd26ca2fdec60000f17d4e66e"
+    },
+    {
+      "file": "dua-bangla-chapter-83.json",
+      "sha256": "3b06eeb13488a6a433fdde97f0941c2f18788e8ec64e16dbf6f4ae139bda0ca8"
+    },
+    {
+      "file": "dua-bangla-chapter-84.json",
+      "sha256": "40756353df2669ce89335c7cb9572dcf159eb5d20102279b0279f992e924a629"
+    },
+    {
+      "file": "dua-bangla-chapter-85.json",
+      "sha256": "8b4e4b009b51bb2fabe2ff843b61cb94062b4fb3e5a327045410262a00b835ea"
+    },
+    {
+      "file": "dua-bangla-chapter-86.json",
+      "sha256": "6119fe149a61333ab73d1ed8f9d96df01f3a975a0f291b4081fcdf63e7c049b5"
+    },
+    {
+      "file": "dua-bangla-chapter-87.json",
+      "sha256": "20bac7962967f2cad39feadd12f993c0939960ce44cce89fa079862fde510173"
+    },
+    {
+      "file": "dua-bangla-chapter-88.json",
+      "sha256": "15612f6468193511993c75d11d0978feb749279c0a7787949f7376f99f9e8e44"
+    },
+    {
+      "file": "dua-bangla-chapter-89.json",
+      "sha256": "bd2fc2b3a8565d2616c08e4961cd1c3348c527d980a44b4cc03c4543a55f8ff9"
+    },
+    {
+      "file": "dua-bangla-chapter-9.json",
+      "sha256": "c0d4640fe90d0a1ce1f8fd8bdbfdb9477c9de1e168b638d518ce43398a8033dc"
+    },
+    {
+      "file": "dua-bangla-chapter-90.json",
+      "sha256": "c1e756132ac71eabd7bb2a17f759db33d2cfb96800b33a7b70480175c2246917"
+    },
+    {
+      "file": "dua-bangla-chapter-91.json",
+      "sha256": "1c594334ac4ac6bb3c240506a006f8e21a9332a8756376630a38486d57c95a10"
+    },
+    {
+      "file": "dua-bangla-chapter-92.json",
+      "sha256": "e8fd9e0526ddc3ba3a1301bcbbca8b9c905cf48297c267e45679181ffd85b808"
+    },
+    {
+      "file": "dua-bangla-chapter-93.json",
+      "sha256": "ec92bb4140a048ccf65be033d62cdfa0195e3fa5f1826c1f5156499f02fb8d23"
+    },
+    {
+      "file": "dua-bangla-chapter-94.json",
+      "sha256": "bf2e931e4b4915bef4de32bfeec70e7080742b8d52d71c40f98fc41183752722"
+    },
+    {
+      "file": "dua-bangla-chapter-95.json",
+      "sha256": "a5f231129253e332d703e7765cdc688520e5fbe30f7ae5c4db057185ab1e4ec1"
+    },
+    {
+      "file": "dua-bangla-chapter-96.json",
+      "sha256": "1d291cb40a96daf8eef813f86d3a00cfc04851715d1f4df9110d64eac69a5fed"
+    },
+    {
+      "file": "dua-bangla-chapter-97.json",
+      "sha256": "51b3e8b372260e503c8f5955f47c92869a09a10b17542454c46d09dbb9837026"
+    },
+    {
+      "file": "dua-bangla-chapter-98.json",
+      "sha256": "b35aa369a9fd7b52e014c8484dfcd36379378308d46203c03b6ca76f154f4b4d"
+    },
+    {
+      "file": "dua-bangla-chapter-99.json",
+      "sha256": "6ae0dc53cb3e078323aceb43d29d1a721be778995f1aae6e46807def67a5da77"
+    }
+  ]
+}

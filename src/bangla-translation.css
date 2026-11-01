@@ -1,0 +1,7 @@
+:root .bangla-translation{margin:22px 0;padding:0 0 20px;border-bottom:1px solid #e1e6d5;text-align:left;min-width:0}
+:root .bangla-label{display:block;font-family:'Noto Serif Bengali',serif;color:#61704d;font-size:12px;line-height:1.9;margin-bottom:10px}
+:root .bangla-translation>p{font-family:'Noto Serif Bengali',serif;color:#35432b;font-size:17px;line-height:2.1;white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0 15px;letter-spacing:0}
+:root .bangla-translation>small,:root .bangla-translation>a{display:block;color:#77836a;font-size:10px;line-height:1.8;margin:5px 0;overflow-wrap:anywhere}
+:root .bangla-translation>a{text-decoration:underline;text-underline-offset:3px}
+:root .bangla-status{font-family:'Noto Serif Bengali',serif;font-size:12px;line-height:1.9;color:#7c856e}
+@media(max-width:600px){:root .bangla-translation>p{font-size:15px;line-height:2}:root .bangla-label{font-size:11px}}
